@@ -1,6 +1,6 @@
 Item,Condition,PictureUnselected,PictureSelected,ListenerResponse,Correct,Type
 1,A,1a_unselected.png,1a_selected.png,Unten rechts,0,Item 1 – condition A
 filler2,singleton,filler2_unselected.png,filler2_selected.png,Oben rechts,0,Filler 2 – singleton
-2,C,2c_unselected.png,2c_selected.png,Oben links,0,Item 2 – condition C
-filler3,duplicate,filler3_unselected.png,filler3_selected.png,Oben rechts,1,Filler 3 – duplicate
-3,B,3b_unselected.png,3b_selected.png,Unten links,0,Item 3 – condition B
+2,C,2c_unselected.png,2c_selected.png,Oben rechts,0,Item 2 – condition C
+filler3,duplicate,filler3_unselected.png,filler3_selected.png,Oben links,1,Filler 3 – duplicate
+3,B,3b_unselected.png,3b_selected.png,Oben rechts,0,Item 3 – condition B
