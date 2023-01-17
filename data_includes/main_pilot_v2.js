@@ -9,6 +9,9 @@ PennController.ResetPrefix(null);
 
 // PreloadZip("https://downgit.github.io/#/home?url=https://github.com/miriamschulz/PCIbex_images/blob/main/images_compressed.zip")
 // PennController.AddHost("https://downgit.github.io/#/home?url=https://github.com/miriamschulz/PCIbex_images/blob/main/images_compressed.zip"); // Pictures
+PennController.AddHost("https://www.coli.uni-saarland.de/~mschulz/experiments/relin/pilot_demo_images/"); // Pictures
+InitiateRecorder("https://www.coli.uni-saarland.de/~mschulz/experiments/relin/saveRecordings.php");
+
 
 var progressBarText = "Fortschritt";
 
@@ -91,8 +94,16 @@ Template("data.csv", row =>
       newText("describePicture", "Beschreiben Sie die rot umrandete Box. <br>Wenn Sie fertig sind, drücken Sie eine beliebige Taste, um fortzufahren.")
           .italic()
       ,
+      newMediaRecorder("recorder", "audio")
+          .log()
+          .once()
+          .record()
+          .print()
+          .wait()
+      ,
       newKey("anyKey2", "")
           .wait()
+          // .wait(getMediaRecorder("recorder").test.recorded())
       ,
       getText("describePicture")
           .remove()
